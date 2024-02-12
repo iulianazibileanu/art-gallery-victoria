@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Galeria de artă Victoria</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Galeria de artă Victoria, localizată în Iași, Strada Arcu, nr.5"
+    />
+    <script
+      src="https://kit.fontawesome.com/2d5f096f88.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="galerie-de-arta.css" />
+  </head>
+  <body>
+    <div class="shopping-cart" onclick="cartExpand()">
+      <span id="number-prod-in-cart">0</span>
+      <i class="fa-solid fa-cart-shopping pointer"></i>
+      <span class="pointer"><strong>COȘ DE CUMPĂRĂTURI</strong></span>
+    </div>
+    <aside class="cart-list" id="expanded-cart">
+      <i class="fa-solid fa-x pointer" onclick="closeCart()"></i>
+      <h3 class="title-expanded-cart" id="cart-title">COȘ DE CUMPĂRĂTURI</h3>
+      <p id="cart-value">Coșul este gol.</p>
+      <p id="min-order">Comanda minimă este de 100 de lei!</p>
+      <div class="cart-buttons-container">
+        <button id="empty-cart-button" class="cart-buttons">
+          GOLEȘTE COȘUL
+        </button>
+        <button id="checkout-button" class="cart-buttons">
+          FINALIZEAZĂ COMANDA
+        </button>
+      </div>
+    </aside>
+    <header class="header">
+      <div class="page-title">
+        <img src="victoria.png" alt="victoria-logo" style="width: 10%" />
+        <h1>GALERIA DE ARTĂ VICTORIA</h1>
+        <p style="line-height: 150%">
+          Galeria noastră a luat naștere din pasiune pentru frumos și din
+          dorința de a îl împărtăși. Vă invităm să admirați creații unicat,
+          aparținând atât artiștilor locali, cât și unor nume de anvergură
+          internațională. Bucuria de a avea oricare dintre aceste piese în
+          living-ul dumneavoastră se află doar la un click distanță!
+        </p>
+      </div>
+    </header>
+    <h2>Produse</h2>
+    <section class="products" id="products-container">
+      <div class="painting" productId="one">
+        <img
+          src="https://1.bonami.ro/images/products/25/b3/25b30ef7839e924f304f2f439ec765776f09a57e-600x600.jpeg"
+          alt='tablou "Toamna de aur"'
+        />
+        <p>"Toamna de aur"</p>
+        <p class="artist">Artist: John Quincy Adams</p>
+        <p>100 lei</p>
+        <button>Adaugă în coș</button>
+      </div>
+      <div class="painting" productId="two">
+        <img
+          src="https://1.bonami.ro/images/products/02/80/0280c1022ce7b239cb1f1e8d6f3a58fd8f97cbd5-600x600.jpeg"
+          alt='tablou "Rugină vie"'
+        />
+        <p>"Rugină vie"</p>
+        <p class="artist">Artist: Corneliu Baba</p>
+        <p>150 lei</p>
+        <button>Adaugă în coș</button>
+      </div>
+      <div class="painting" productId="three">
+        <img
+          src="https://www.storedesign.ro/image/cache/catalog/Tablouri/500-600/orasul-de-pe-lac-1100x1100.jpg"
+          alt='tablou "Dragoste în octombrie"'
+        />
+        <p>"Dragoste în octombrie"</p>
+        <p class="artist">Artist: Cristian Porumb</p>
+        <p>95 lei</p>
+        <button>Adaugă în coș</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-main-content">
+        <div class="footer-menu">
+          <div class="footer-menu-title">DESPRE NOI</div>
+          <hr />
+          <ul class="footer-menu-items">
+            <li>Contact</li>
+            <li>Termeni și condiții</li>
+            <li>Politica de confidențialitate</li>
+            <li>Abonare Newsletter</li>
+          </ul>
+        </div>
+
+        <div class="footer-menu">
+          <div class="footer-menu-title">SERVICII CLIENȚI</div>
+          <hr />
+          <ul class="footer-menu-items">
+            <li>Livrare</li>
+            <li>Schimb de produse</li>
+            <li>Politica de retur</li>
+            <li>Protecția consumatorului</li>
+          </ul>
+        </div>
+
+        <div class="contacts">
+          <div><b>Adresă:</b> Calea Victoriei nr.1, București</div>
+          <div><b>Contact:</b> +40745111000</div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-details">
+        Copyright © 2023 Galeria de Artă Victoria
+      </div>
+    </footer>
+    <script src="galerie-de-arta.js"></script>
+  </body>
+</html>
